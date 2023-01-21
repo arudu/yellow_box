@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies&display=swap');
+
+body {
+    background-color: #111111;
+}
+
+.top-header, .title, .middle-section, .bottom-section, .footer {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-out;
+  }
+  .show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+.box {
+    height: 20px;
+    width: 20px;
+    background: yellow;
+    margin-left: 2rem;
+    transition: all .2s ease-in-out;
+}
+
+.box:hover {
+    cursor: pointer;
+    transform: scale(2);
+}
+
+.side {
+    color: #fefefe;
+    font-size: 5vh;
+    margin-right: 2rem;
+    font-weight: bold;
+    transition: all .2s ease-in-out;
+}
+
+.side:hover {
+    cursor: pointer;
+    color: yellow;
+    transform: scale(1.1);
+}
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    margin-left: 10rem;
+    margin-top: 10rem;
+}
+
+h1 {
+    font-size: 15vh;
+    font-family: 'Rowdies', cursive;
+    color: #fefefe;
+}
+
+.img1 {
+    width: 80rem;
+}
+
+.middle-section {
+    display: flex;
+    flex-direction: column;
+    width: 52rem;
+    margin-left: 15rem;
+}
+
+h2 {
+    font-size: 10vh;
+    color: #fefefe;
+}
+
+h5 {
+    font-size: 5vh;
+    color: #fefefe;
+}
+
+p {
+    color: #858585;
+}
+
+ul {
+    list-style: none;
+    color: #fefefe;
+    font-size: 4vh;
+    font-weight: bolder;
+}
+
+.bottom-section {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+svg {
+    background-color: #fefefe;
+    border-radius: 10px;
+    height: 2rem;
+    width: 2rem;
+}
+
+a {
+    color: yellow;
+    text-decoration: none;
+}
+
+.footer-end {
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+  /* Make the header text smaller */
+  .top-header h5 {
+    font-size: 14px;
+  }
+
+  /* Stack the client list items vertically */
+  .bottom-section ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
